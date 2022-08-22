@@ -6,7 +6,7 @@ from . EmailBackend import EmailBackEnd
 # Create your views here.
 def blogindex(request):
     allblogs = Blogs.objects.all()
-    return render(request,'blogindex.html',{'allblogs':allblogs})
+    return render(request,'blogindex.html')
 
 def blogregister(request):
     if request.method == 'POST':
